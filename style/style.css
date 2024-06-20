@@ -1,0 +1,33 @@
+@charset "UTF-8 ";
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+/* Config Cores e Fontes */
+:root {
+  --cor1: black;
+  --cor2: white;
+
+  --fonte1: "Passion One", sans-serif ;
+  --fonte2: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte3: "Sriracha", cursiva;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--fonte3);
+}
+
+
+.header {
+  background: black;
+  height: 166px;
+  padding: 50px 0 50px 0;
+}
