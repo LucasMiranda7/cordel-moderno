@@ -1,7 +1,8 @@
 @charset "UTF-8 ";
 
 /* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 
 
 /* Config Cores e Fontes */
@@ -9,9 +10,9 @@
   --cor1: black;
   --cor2: white;
 
-  --fonte1: "Passion One", sans-serif ;
+  --fonte1: "Passion One", cursive;
   --fonte2: Verdana, Geneva, Tahoma, sans-serif;
-  --fonte3: "Sriracha", cursiva;
+  --fonte3: "Sriracha", cursive;
 }
 
 * {
@@ -21,13 +22,113 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: var(--fonte3);
+  font-size: 1rem;
+}
+
+/* Cabeçalho */
+
+.header {
+  background: var(--cor1);
+  color: var(--cor2);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > h1 {
+  font-family:var(--fonte1);
+  font-size: 10vw;
+  font-variant-caps: small-caps ;
+
+  padding-top: 50px;
+}
+
+.header > p {
+  font-family: var(--fonte2);
+
+  padding-bottom: 50px;
+}
+
+.header > p > a {
+  color: var(--cor2); 
+  font-weight: 700;
+  text-decoration: none;
+  
+}
+
+.header > p > a:hover {
+  text-decoration: underline;
 }
 
 
-.header {
-  background: black;
-  height: 166px;
-  padding: 50px 0 50px 0;
+/* Contéudo Principal */
+
+section {
+  font-style: italic; 
+  font-weight: 600;
+  font-size: 3.5vw;
+  line-height: 2em;
+
+  padding: 10vh 0 10vh 1.9rem;
+}
+
+section > p{
+  padding-bottom: 2em;
+}
+
+.section_trecho {
+  background-color: var(--cor2);
+  color: var(--cor1);
+}
+
+.section_imagem {
+  background-color: var(--cor1);
+  color: var(--cor2);
+  box-shadow: inset 6px 6px 12px 0 rgba(0, 0, 0, 0.603) ;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.imagem1 {
+  background-image: url(../Imagens/background001.jpg);
+  background-position: right center;
+}
+
+.imagem2 {
+  background-image: url(../Imagens/background002.jpg);
+}
+
+.section_imagem > p{
+  background-color: rgba(0, 0, 0, 0.425);
+  text-shadow: 1px 1px 0 black;
+
+  display: inline-block;
+  padding: 5px;
+}
+
+
+.rodape {
+  color: var(--cor2);
+  background-color: var(--cor1);
+  text-align: center;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.rodape > p {
+ 
+
+  font-family: var(--fonte2);
+  font-size: 1em;
+}
+
+.rodape > p > a {
+  color: var(--cor2);
+
+  font-weight: 700;
+  text-decoration: none;
 }
